@@ -12,6 +12,7 @@ class ContractConfig {
   readonly lockAddress: string;
   readonly coldAddress: string;
   readonly fraudAddress: string;
+  readonly feeAddress: string;
   readonly RepoNFT: string;
   readonly RWTId: string;
 
@@ -33,6 +34,7 @@ class ContractConfig {
       this.lockAddress = config.addresses.lock;
       this.coldAddress = config.addresses.cold;
       this.fraudAddress = config.addresses.Fraud;
+      this.feeAddress = config.addresses.Fee;
       this.RepoNFT = config.tokens.RepoNFT;
       this.RWTId = config.tokens.RWTId;
     }
