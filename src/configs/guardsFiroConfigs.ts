@@ -63,13 +63,12 @@ class GuardsFiroConfigs {
       arbitrary: this.arbitraryTxConfirmation,
     },
     addresses: {
-      lock: this.firoContractConfig.lockAddress,
-      cold: this.firoContractConfig.coldAddress,
-      permit: this.firoContractConfig.permitAddress,
-      fraud: this.firoContractConfig.fraudAddress,
-      fee: this.firoContractConfig.feeAddress,
+      lock: this.firoContractConfig.addresses.lock,
+      cold: this.firoContractConfig.addresses.cold,
+      permit: this.firoContractConfig.addresses.WatcherPermit,
+      fraud: this.firoContractConfig.addresses.Fraud,
     },
-    rwtId: this.firoContractConfig.RWTId,
+    rwtId: this.firoContractConfig.tokens.RWTId,
     aggregatedPublicKey: this.aggregatedPublicKey,
     txFeeSlippage: this.txFeeSlippage,
   };

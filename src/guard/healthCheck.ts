@@ -284,7 +284,7 @@ const getHealthCheck = async () => {
       const firoAssetHealthCheck = new EsploraAssetHealthCheckParam(
         FIRO_CHAIN,
         FIRO,
-        firoContracts.lockAddress,
+        firoContracts.addresses.lock,
         Configs.firoWarnThreshold,
         Configs.firoCriticalThreshold,
         GuardsFiroConfigs.rpc.url,
